@@ -1,0 +1,194 @@
+/*============ Base Styles ============*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    font: 1em/1.5 'Muli', sans-serif;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*============ Navigation Styles ============*/
+.name a,
+.main-nav a {
+    display: block;
+    padding: 10px 15px;
+    
+}
+
+.main-nav a {
+    font-weight: bold;
+    background-color: #fff;
+}
+
+.name,
+.main-nav li {
+    margin-bottom: 5px;
+}
+
+/*============ main Styles ============*/
+.about-me {
+    margin-top: 3em;
+}
+
+main {
+    background: #fff;
+    padding: 1em 0 1.8em;
+    margin: 2em 0;
+}
+
+.container {
+    padding: 0 1em;
+}
+
+/*============ Footer Styles ============*/
+.footer-nav {
+    display: none;
+    font-weight: bold;
+    font-size: .8em;
+}
+
+.top p:first-child {
+    float: left;
+}
+
+.top p ~ p {
+    float: right;
+}
+
+/*============ Element Styles ============*/
+main h2 {
+    font-size: 1.2em;
+    margin: 2em 0;
+}
+
+main h3 {
+    font-size: 1.4em;
+    margin: 1em 0 0.2em;
+}
+
+.pro-img {
+    width: 200px;
+}
+
+/*============ ClearFix ============*/
+.clear::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*============ Media Rules ============*/
+@media only screen and (min-width: 768px) {
+
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+
+    .name,
+    .main-nav li {
+        display: inline-block;
+    }
+
+    .col,
+    .port {
+        width: 50%;
+    }
+
+    .col1 {
+        float: right;
+    }
+
+    .col2 {
+        float: left;
+        text-align: left;
+        font-size: 1.1em;
+        margin-top: 0;
+    }
+
+    .col + .col {
+        padding-right: 1em;
+    }
+
+    .port {
+        float: left;
+        padding: 1em;
+    }
+
+    .top p ~ p {
+        display: none;
+    }
+
+    .footer-nav  {
+        display: block;
+        float: right;
+        padding: 20px;
+    }
+
+    .footer-nav li {
+        display: inline-block;
+        margin-left: 1em;
+    }
+
+    .top {
+        padding: 1em 0;
+    }
+
+}
+
+/*============ Media Rules ============*/
+@media only screen and (min-width: 1024px) {
+
+    .container {
+        width: 90%;
+        max-width: 1150px;
+    }
+
+    .name {
+        float: left;
+    }
+
+    .main-header {
+        padding-top: 10px;
+    }
+
+    .main-nav {
+        float: right;
+        padding-top: .5em;
+    }
+
+    .main-nav a {
+        background: none;
+    }
+
+    .port {
+        width: 33%;
+    }
+
+    .port + .port {
+        padding-left: 1em;
+    }
+
+}
